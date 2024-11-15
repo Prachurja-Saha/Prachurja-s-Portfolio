@@ -1,0 +1,154 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    margin-top: 90px;
+    border: 1px solid black;
+    height: 200vh;
+
+
+    /* To ensure your top bar doesn't exceed the viewport width when set to 100%,
+     you can use a combination of box-sizing: border-box; and some margin adjustments.
+      This way, padding and border will be included in the element's total width, 
+      preventing it from overflowing. */
+    border-radius: 10px;
+
+    /* padding-top: 70px; */
+    /* Adjust to the height of the fixed navbar, including padding and border */
+}
+
+
+.Top-Bar {
+
+    z-index: 1000; /* Ensure .Top-Bar stays on top */
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    position: fixed;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    border-radius: 10px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+
+
+    /* Width and Box Model:
+When you set width: 100%, it means the element will take the full width of its container (usually the viewport for a fixed position element).
+Adding padding and borders to an element with width: 100% causes it to exceed 100% of the width, leading to overflow.
+
+Box-Sizing Property:
+The default value of the box-sizing property is content-box, which means the width and height of an element are calculated excluding padding and border.
+Setting box-sizing: border-box; includes the padding and border in the element's total width and height, preventing overflow. */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    
+    /* After adding this its working */
+    /* b/c before it was colourless/ transparent so when we scroll we can see the content */
+    background-color: white;
+}
+
+
+
+.Name {
+    flex: 1;
+}
+
+.Nav-Bar {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 5px;
+}
+
+.Top-Right-Info {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    font-size: larger;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About */
+.About{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 2px;
+}
+
+.Profile_Image{
+    display: flex;
+    flex:1;
+    border: 1px solid black;
+}
+
+.Contact_Summary{
+    font-size: large;
+    line-height: 1.5;
+    /* display: flex; */
+    flex:3;
+
+    border: 1px solid black;
+}
+
+.contact-grid-container{
+    display: grid;
+    
+    /* ratio -> 1:1 for column-> 2 column */
+    grid-template-columns: 1fr 1fr;
+
+    grid-row: auto;
+}
+
+.contact-grid-container p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mail_id{
+    color: #5518AB;
+}
+
+#contact { margin-bottom: 10px}
+
+.linkedin-icon { 
+    font-size: 24px; /* Adjust the size as needed */ 
+    color: #0e76a8; /* LinkedIn brand color */ 
+    text-decoration: none; /* Remove underline */ 
+    margin: 10px; /* Adjust spacing */ 
+} 
+
+.github-icon{
+    font-size: 24px;
+    text-decoration: none; /* Remove underline */ 
+    margin: 10px; /* Adjust spacing */ 
+    color: rgb(31, 35, 40);
+}
+
+.mail-icon{
+    font-size: 24px;
+    text-decoration: none; /* Remove underline */ 
+    margin: 10px; /* Adjust spacing */
+    color: rgb(213, 9, 9)
+}
+
+#phone-block{
+    margin: 10px; /* Adjust spacing */
+}
+
+#phone-block span{
+    margin: 10px;
+}
+
+

@@ -1,10 +1,12 @@
+html { scroll-behavior: smooth; }
+
 body {
 
     font-family: Arial, Helvetica, sans-serif;
     margin: 50px;
-    margin-top: 90px;
-    border: 1px solid black;
-    height: 200vh;
+    margin-top: 70px;
+    /* border: 1px solid black; */
+    /* height: 200vh; */
 
 
     /* To ensure your top bar doesn't exceed the viewport width when set to 100%,
@@ -15,6 +17,8 @@ body {
 
     /* padding-top: 70px; */
     /* Adjust to the height of the fixed navbar, including padding and border */
+
+    display: grid;
 }
 
 
@@ -30,9 +34,11 @@ body {
     top: 0; /* Align to the top */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
+
+    border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+
 
 
     /* Width and Box Model:
@@ -53,7 +59,9 @@ Setting box-sizing: border-box; includes the padding and border in the element's
 
 
 .Name {
+    display: flex;
     flex: 1;
+    padding-left: 10px;
 }
 
 .Nav-Bar {
@@ -61,18 +69,30 @@ Setting box-sizing: border-box; includes the padding and border in the element's
     flex: 3;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 20px;
-    margin: 5px;
+    /* gap: 20px; */
+
+    align-items: center; /* Centers vertically */
 }
 
 .Top-Right-Info {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
-    font-size: larger;
-    width: 100px;
+    font-size: 1.3em;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 50px;
     border-radius: 10px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.Top-Right-Info a{
+    text-decoration: none;
+    color: black;
+}
+
+.Top-Right-Info a:hover {
+    color: grey;
 }
 
 
@@ -80,26 +100,45 @@ Setting box-sizing: border-box; includes the padding and border in the element's
 .About{
     margin: 5px;
     padding: 5px;
-    display: flex;
-    border: 1px solid black;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    gap: 2px;
+    display: grid;
+    border: 1px solid rgb(158, 7, 7);
+    border-radius: 10px;
+
+    grid-template-columns: 3fr 1fr;
+    /* flex-wrap: wrap;
+    flex-direction: row-reverse; */
+    /* gap: 2px; */
 }
 
+/* Highlighting the section */ 
+#about:target, #project:target, #certification:target, #resume:target {
+     background-color: lightyellow; 
+     /* border-color: red; */
+     /* Highlight color */ 
+    }
+
+/* Default background color */ 
+.About, .Project, .Certification, .Resume { 
+    /* background-color: lightyellow; */
+    transition: background-color 0.3s ease; 
+}    
+
 .Profile_Image{
-    display: flex;
-    flex:1;
-    border: 1px solid black;
+    /* display: flex;
+    flex:1; */
+    /* border: 1px solid black; */
+
+    display: grid;
 }
 
 .Contact_Summary{
     font-size: large;
     line-height: 1.5;
-    /* display: flex; */
-    flex:3;
+    /* display: flex;
+    flex:3; */
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: grid;
 }
 
 .contact-grid-container{
@@ -114,6 +153,10 @@ Setting box-sizing: border-box; includes the padding and border in the element's
 .contact-grid-container p{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#first-grid{
+   display: grid;
 }
 
 #mail_id{
@@ -151,4 +194,39 @@ Setting box-sizing: border-box; includes the padding and border in the element's
     margin: 10px;
 }
 
+.contact-summary-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+
+ @media (max-width: 500px) {
+
+    .Name{
+        font-size: medium;
+        width: fit-content; 
+    }
+
+    .Name h2{
+        margin: auto;
+    }
+
+    .Contact_Summary{
+        line-height: normal;
+        font-size: medium;
+    }
+
+    .Top-Right-Info{
+        font-size: medium;
+        width: fit-content;
+        height: fit-content;
+        padding: auto;
+    }
+
+    .Nav-Bar{
+        font-size: medium;
+        width: fit-content;
+        padding: auto;
+    }
+    
+} 

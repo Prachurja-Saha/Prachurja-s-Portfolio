@@ -9,7 +9,7 @@ I am a Full Stack Developer with over 2 years of experience in building scalable
 ## Contact Information
 - **Full Stack Developer**
 - **Email**: [prachurjasaha45732@gmail.com](mailto:prachurjasaha45732@gmail.com)
-- **Mobile Number**: +91 8697308535
+- **Mobile Number**: +91 8697308535, +91 9330315995
 - **Location**: Garia Nabagram, Kolkata, West Bengal, India – 700152
 - **LinkedIn**: [Prachurja Saha](https://www.linkedin.com/in/prachurja-saha-873146218/)
 - **GitHub**: [Prachurja-Saha](https://github.com/Prachurja-Saha)

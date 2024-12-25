@@ -9,7 +9,7 @@ I am a Full Stack Developer with over 2 years of experience in building scalable
 ## Contact Information
 - **Full Stack Developer**
 - **Email**: [prachurjasaha45732@gmail.com](mailto:prachurjasaha45732@gmail.com)
-- **Mobile Number**: +91 8697308535, +91 9330315995
+- **Mobile Number**: +91 8697308535, +91 7890352275
 - **Location**: Garia Nabagram, Kolkata, West Bengal, India – 700152
 - **LinkedIn**: [Prachurja Saha](https://www.linkedin.com/in/prachurja-saha-873146218/)
 - **GitHub**: [Prachurja-Saha](https://github.com/Prachurja-Saha)
@@ -52,6 +52,10 @@ I am a Full Stack Developer with over 2 years of experience in building scalable
 - Docker Desktop
 - Azure DevOps
 
+### Cloud
+- AWS
+- Azure
+
 ### Development Tools
 - IntelliJ
 - Spring Tool Suite (STS)
@@ -77,7 +81,7 @@ I am a Full Stack Developer with over 2 years of experience in building scalable
 
 ## Projects
 
-### SITA Airlines Project (Sep 2023 – Present)
+### Digihub Project (client name : SITA Airlines Project)
 - Contributed to building and maintaining backend services for a customer-facing application, focusing on efficient and scalable solutions.
 - Integrated external systems such as Salesforce and ServiceNow using microservice architecture to ensure seamless communication.
 - Implemented core backend functionalities with Java Spring Boot, following the MVC architecture.
@@ -86,7 +90,7 @@ I am a Full Stack Developer with over 2 years of experience in building scalable
 - Adopted a test-driven development (TDD) approach, developing robust unit tests using JUnit and Mockito.
 - Developed microservice-based communication via RESTful APIs and message queues for real-time data synchronization.
 
-### Zen Visit Project (Mar 2023 – Aug 2023)
+### Zen Visit Project (Internal Project)
 - Created a responsive web application for internal users.
 - Collaborated on UI design using React and Bootstrap.
 - Engaged in Agile methodologies, ensuring optimal performance through testing.
